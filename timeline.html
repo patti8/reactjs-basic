@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Time line</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+
+
+  </head>
+  <body>
+
+    <div id="app"></div>
+
+    <script type="text/babel">
+
+      class Panel extends React.Component {
+        render() {
+          return (
+            <div className="notificationsFrame">
+              <div className="panel">
+                <div className="header">
+
+                  <div className="menuIcon">
+                    <div className="dashTop"></div>
+                    <div className="dashBottom"></div>
+                    <div className="circle"></div>
+                  </div>
+
+                  <span className="title">Timeline</span>
+
+                  <input
+                    type="text"
+                    className="searchInput"
+                    placeholder="Search ..." />
+
+                  <div className="fa fa-search searchIcon"></div>
+                </div>
+                <div className="content">
+                  <div className="line"></div>
+                  <div className="item">
+
+                    <div className="avatar">
+                      <img src="http://www.croop.cl/UI/twitter/images/doug.jpg"/>
+                    </div>
+
+                    <span className="time">
+                      An hour ago
+                    </span>
+                    <p>Ate Lunch</p>
+                  </div>
+
+                  <div className="item">
+                    <div className="avatar">
+                      <img src="http://www.croop.cl/UI/twitter/images/doug.jpg"/>
+                    </div>
+
+                    <span className="time">10 am</span>
+                    <p>Read Day two article</p>
+                  </div>
+
+                  <div className="item">
+                    <div className="avatar">
+                      <img src="http://www.croop.cl/UI/twitter/images/doug.jpg" />
+                    </div>
+
+                    <span className="time">10 am</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                  </div>
+
+                  <div className="item">
+                    <div>
+                        <img src="http://www.croop.cl/UI/twitter/images/doug.jpg" />
+                    </div>
+
+                    <span className="time">2:21 pm</span>
+                    <p>Lorem Ipsum has been the industrys standart dummy text ever since the 1500, when an unkown printer took a gallery of tyoe and scrambled it to make type specimen book </p>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          )
+        }
+      }
+
+      var mount = document.querySelector('#app');
+      ReactDOM.render(<Panel />, mount);
+
+    </script>
+
+  </body>
+</html>
