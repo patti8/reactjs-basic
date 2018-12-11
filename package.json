@@ -1,0 +1,22 @@
+{
+  "name": "reactjs-basic",
+  "version": "1.0.0",
+  "description": "\"# reactjs-basic\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patti8/reactjs-basic.git"
+  },
+  "author": "rvld",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patti8/reactjs-basic/issues"
+  },
+  "homepage": "https://github.com/patti8/reactjs-basic#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
